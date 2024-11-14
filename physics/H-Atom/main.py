@@ -237,7 +237,7 @@ prob_density = compute_probability_density(psi)
 c) Plotting the data
 im = ax.imshow(np.sqrt(prob_density), cmap=sns.color_palette(...))"""
 
-plot_wf_probability_density(4, 3, -1, 0.3, True)
+plot_wf_probability_density(6, 3, -1, 0.3, True)
 
 """The plot depicts the electron probability density for a hydrogen atom in the quantum state n=3, l=2, and m=1. This corresponds to a 3d orbital, displaying a clover-shaped distribution pattern with two lobes, indicating regions of higher electron probability, as shown by the bright spots.
 

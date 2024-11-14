@@ -78,7 +78,7 @@ class Sim():
 Np = 50
 
 m = 127*1.66E-27
-T_init = 293.15
+T_init = 493.15
 
 v_avg = np.sqrt(3/2*1.380649E-23*T_init*2/m)
 

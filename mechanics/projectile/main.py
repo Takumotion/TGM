@@ -21,14 +21,15 @@ def formula(v_1, v_2, angle_1, angle_2):
 
     return y_1, y_2, x_1, x_2
 
+
 # General variable and constant values
 t = np.linspace(0, 10, 1000)  # Adjusted for realistic time frame
 g = 9.81  # acceleration due to gravity in m/s^2
-v_1 = 20  # initial velocity in m/s
-v_2 = 0   # initial velocity in m/s
-h = 5    # initial height in meters
-angle_1 = 30  # angle in degrees
-angle_2 = 0  # angle in degrees
+v_1 = 200  # initial velocity in m/s
+v_2 = 10   # initial velocity in m/s
+h = 10    # initial height in meters
+angle_1 = 45  # angle in degrees
+angle_2 = 10  # angle in degrees
 
 y_1, y_2, x_1, x_2 = formula(v_1, v_2, angle_1, angle_2)
 
