@@ -63,12 +63,20 @@ def free(npts):
 def step(npts,v0):
     "Potential step"
     v = free(npts)
+<<<<<<< HEAD
     v[npts/2:] = v0
+=======
+    v[npts//2:] = v0
+>>>>>>> aa0f11049f6f1e2673f9105843998684efbc06f1
     return v
 def barrier(npts,v0,thickness):
     "Barrier potential"
     v = free(npts)
+<<<<<<< HEAD
     v[npts/2:npts/2+thickness] = v0
+=======
+    v[npts//2:npts//2+thickness] = v0
+>>>>>>> aa0f11049f6f1e2673f9105843998684efbc06f1
     return v
 def fillax(x,y,*args,**kw):
     """Fill the space between an array of y values and the x axis.
@@ -158,7 +166,11 @@ FU = 2                 #  Future
 #  Initialize wave function.  A present-only state will "split" with half the
 #  wave function propagating to the left and the other half to the right.
 #  Including a "past" state will cause it to propagate one way.
+<<<<<<< HEAD
 xn = range(1,N/2)
+=======
+xn = range(1,N//2)
+>>>>>>> aa0f11049f6f1e2673f9105843998684efbc06f1
 x = X[xn]/dx    #  Normalized position coordinate
 gg = Gaussian(x,x0,sigma)
 cx = np.cos(k0*x)
